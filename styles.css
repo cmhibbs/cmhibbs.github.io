@@ -1,0 +1,18 @@
+span {
+color: aqua;
+
+}
+
+input{
+    border-color: blue;
+}
+
+.logoIMG {
+    width: 300px;
+    height: 300px;
+}
+
+
+#test {
+    border: solid 5px black;
+}
