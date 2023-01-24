@@ -1,11 +1,14 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 hr {
     border: none;
     background-color:black;
+    width: 600px;
     height: 2px;
     margin: 0px;
 }
@@ -21,6 +24,12 @@ h1 {
     margin-bottom: 2px;
 }
 
+.main{
+    margin-top: 10px;
+    width: 260px;
+    height: 326px;
+}
+
 #header {
     display: flex;
     flex-direction: row;
@@ -29,3 +38,44 @@ h1 {
     justify-content: space-between;
 }
 
+@media (max-width: 390px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    hr {
+        border: none;
+        background-color:black;
+        height: .2px;
+        margin: 0px;
+        width: 350px;
+    }
+    
+    h1 {
+        margin-bottom: 0px;
+        margin-top: 3px;
+        font-size: 16px;
+    }
+    
+    .logoIMG {
+        width: 40px;
+        height: 34px;
+        margin-bottom: 2px;
+    }
+
+    .main{
+        margin-top: 6px;
+        width: 220px;
+        height: 260px;
+    }
+    
+    
+    #header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 350px;
+        justify-content: space-between;
+    }
+}
