@@ -99,6 +99,18 @@ h1 {
     background-color: black;
 }
 
+#portfolio{
+    width: 730px;
+}
+
+.testy{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    width: 234px;
+    height: 293.5px;
+}
 
 
 @media (max-width: 1170px) {
