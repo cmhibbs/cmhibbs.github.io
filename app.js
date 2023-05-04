@@ -18,6 +18,7 @@ Croquis.addEventListener('click', function(){
 let main = document.querySelector("#main");
 let croq = document.querySelector("#croq");
 let port = document.querySelector("#portfolio");
+let final = document.querySelector("#final");
 document.querySelector("#homeBTN").addEventListener('click', function(){
     console.log("home");
     main.classList.add("Show");
@@ -26,6 +27,8 @@ document.querySelector("#homeBTN").addEventListener('click', function(){
     croq.classList.add("Hide");
     port.classList.remove("divShow");
     port.classList.add("Hide");
+    final.classList.remove("Show");
+    final.classList.add("Hide");
 })
 
 document.querySelector("#croquisBTN").addEventListener('click', function(){
@@ -36,12 +39,28 @@ document.querySelector("#croquisBTN").addEventListener('click', function(){
     main.classList.add("Hide");
     port.classList.remove("divShow");
     port.classList.add("Hide");
+    final.classList.remove("Show");
+    final.classList.add("Hide");
 })
 
 document.querySelector("#portfolioBTN").addEventListener('click', function(){
-    console.log("croq");
+    console.log("protfolio");
     port.classList.add("divShow");
     port.classList.remove("Hide");
+    main.classList.remove("Show");
+    main.classList.add("Hide");
+    croq.classList.remove("divShow");
+    croq.classList.add("Hide");
+    final.classList.remove("Show");
+    final.classList.add("Hide");
+})
+
+document.querySelector("#finalBTN").addEventListener('click', function(){
+    console.log("final");
+    final.classList.add("divShow");
+    final.classList.remove("Hide");
+    port.classList.remove("divShow");
+    port.classList.add("Hide");
     main.classList.remove("Show");
     main.classList.add("Hide");
     croq.classList.remove("divShow");
